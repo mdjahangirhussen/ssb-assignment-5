@@ -1,0 +1,640 @@
+/*----------------------------------
+--------------common css-----------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 35px;
+    padding: 20px 0;
+    color: #506A85;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background: rgba(10, 182, 156, .7);
+    transition: .5s;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.col-1 {
+    width: 8.33%;
+    float: left;
+}
+
+.col-2 {
+    width: 16.67%;
+    float: left;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: 33.33%;
+    float: left;
+}
+
+.col-5 {
+    width: 41.47%;
+    float: left;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+
+/*-------- Start header-section ------*/
+.header-section {
+    overflow: hidden;
+}
+
+.header-top {
+    background: #F5F7FA;
+    overflow: hidden;
+    color: #506a85;
+    box-shadow: 0 2px 1px 0 #e6e9ed;
+}
+
+.header-left {
+    width: 30%;
+    float: left;
+}
+
+.header-left span {
+    padding: 8px 20px 8px 0;
+    display: inline-block;
+}
+
+.header-left span:hover {
+    color: #00bc9c;
+}
+
+.header-left i {
+    color: #506a85;
+    padding: 0 8px 0 0px;
+}
+
+.header-right {
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+.social-icon {
+    float: right;
+}
+
+/*=============================
+problem:  float:left& display:inline
+303.beautiful-content-box p {
+    width: 270px;
+    max-width?
+==============================*/
+.social-icon li {
+    float: left;
+    list-style: none;
+}
+
+.social-icon li a {
+    color: #506a85;
+}
+
+.social-icon li a i {}
+
+i.fab.fa-facebook-f,
+.fab.fa-google-plus,
+.fab.fa-twitter,
+.fab.fa-pinterest-p,
+.fab.fa-behance,
+i.fab.fa-dribbble {
+    width: 33px;
+    height: 33px;
+    color: #506a85;
+    text-align: center;
+    line-height: 33px;
+}
+
+.fab.fa-facebook-f:hover {
+    color: #fff;
+    background: #4267B2;
+}
+
+.fab.fa-google-plus:hover {
+    color: #fff;
+    background: #DD4D42;
+
+}
+
+.fab.fa-twitter:hover {
+    color: #20A2F2;
+    background: #FFFFFF;
+
+}
+
+.fab.fa-pinterest-p:hover {
+    color: #FFFFFF;
+    background: #BD081B;
+
+}
+
+.fab.fa-behance:hover {
+    color: #FFFFFF;
+    background: #0057FF;
+
+}
+
+.fab.fa-dribbble:hover {
+    color: #BA1959;
+    background: #E54786;
+
+}
+
+.navbar {
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+}
+
+.main-menu {
+    width: 60%;
+    float: left;
+}
+
+.main-menu li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+.main-menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #72879D;
+}
+
+.main-menu li a:hover {
+    color: #00BC9C;
+    background: #F3F7F8;
+    border-radius: 10px 10px 0 0;
+}
+
+/*=============startmega-menu-dopdown====================*/
+.mega-menu-dopdown {
+    position: absolute;
+    left: -9999px;
+    transition: .5s;
+    color: #00BC9C;
+    background: #F3F7F8;
+    width: 100%;
+}
+
+.mega-menu-dopdown li {
+    float: none;
+}
+
+.mega-menu-dopdown li a {}
+
+.main-menu li:hover .mega-menu-dopdown {
+    left: 0;
+}
+
+/*============= end mega-menu-dopdown====================*/
+.navbar form {
+    width: 20%;
+    float: left;
+    padding: 15px 0;
+    text-align: right;
+    position: relative;
+}
+
+.navbar input {
+    border: none;
+    border-bottom: 1px solid #00BC9C;
+    opacity: 0;
+    outline: none;
+    color: #00bc9c;
+}
+
+.navbar input:hover {
+    opacity: 1;
+}
+
+i.fas.fa-search {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: #506a85;
+}
+
+::placeholder {
+    color: #00bc9c;
+}
+
+/*-------- End header-section --------*/
+
+/*-------- Start banner-section --------*/
+.banner-section {
+    background: url("../images/banner-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.banner-content {
+    text-align: center;
+    color: #fff;
+    padding: 185px 0 200px;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.banner-content p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #8297af;
+    padding: 10px 0 55px;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 12px 35px;
+    background: #00BC9C;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #00bc9c;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #00BC9C;
+    border: 1px solid #00bc9c;
+}
+
+/*-------- End banner-section ---------*/
+
+/*-------- Start beautiful-section ---------*/
+.beautiful-section {
+    padding: 50px 0;
+}
+
+.beautiful-content {
+    text-align: center;
+}
+
+.beautiful-content p {
+    max-width: 550px;
+    margin: 0 auto;
+    color: #AFB9C4;
+}
+
+.beautiful-content-box {
+    overflow: hidden;
+    padding: 45px 0;
+}
+
+.beautiful-content-box i {
+    float: left;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 8px 0px 0 0;
+    color: #00bc9c;
+}
+
+.beautiful-content-box h3 {
+    font-size: 25px;
+    color: #506A85;
+    padding-left: 61px;
+}
+
+.beautiful-content-box p {
+    width: 270px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 15px 0px;
+    color: #AFB9C4;
+}
+
+/*-------- End beautiful-section ---------*/
+
+/*-------- Start test-works-section ---------*/
+.test-works-section {
+    overflow: hidden;
+    background: #F2F5F7;
+    text-align: center;
+    padding: 50px 0 70px;
+}
+
+.test-works {}
+
+.test-works p {
+    color: #94A2B2;
+}
+
+.test-works-content {}
+
+.test-work-ditalis {
+    color: #506A85;
+    padding: 0px 0 15px;
+    background: #fff;
+    margin: 50px 20px;
+}
+
+.test-work-ditalis img {}
+
+.test-work-about {}
+
+.test-work-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.test-work-effect:hover .overlay {
+    top: 0;
+}
+
+.test-work-icon-effect {
+    position: absolute;
+    bottom: -100%;
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+}
+
+.test-work-icon-effect i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.test-work-effect:hover .test-work-icon-effect {
+    bottom: -50%;
+}
+
+.test-work-about h4 {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.test-work-about p {
+    font-size: 18px;
+}
+
+.test-work-slider {}
+
+.test-work-slider-content {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.test-work-slider-content:hover .overlay {
+    top: 0;
+}
+
+.test-work-wow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    transition: .5s;
+
+}
+
+.test-work-slider-content:hover .test-work-wow {
+    bottom: -30%;
+}
+
+.test-work-wow h2 {}
+
+/*-------- End test-works-section ---------*/
+
+/*-------- Start Want-to-work-section ---------*/
+.want-to-work-section {
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.want-to-work-content {}
+
+.want-to-work-content p {
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 0px 0 30px;
+    color: #72879d;
+}
+
+.want-to-work-content a {}
+
+.want-to-work-content a i {}
+
+/*-------- End Want-to-work-section ---------*/
+
+/*-------- Start contact-section ---------*/
+.contact-section {
+    padding: 50px 0;
+    background: #2f4052;
+}
+
+.contact-content h3 {
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.contact-logo {
+    padding-bottom: 15px;
+}
+
+.contact-content p {
+    color: #a3b1bf;
+    padding-bottom: 15px;
+}
+
+.contact-content a {}
+
+.contact-content a {
+    color: #a3b1bf;
+    position: relative;
+    padding: 0 20px 0 0;
+    font-weight: 700;
+}
+
+.contact-content a i {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+.contact-info {}
+
+.contact-info p {
+    padding: 5px 0;
+    font-style: normal;
+}
+
+.contact-info i {
+    padding-right: 15px;
+}
+
+.contact-content form {
+    position: relative;
+}
+
+input[type="email"] {
+    padding: 20px 12px;
+    outline: none;
+    width: 260px;
+    background: #4e5c6c;
+    border: none;
+    color: #fff;
+}
+
+input[type="submit"] {
+    padding: 5px 15px;
+    background: #00bc9c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    font-weight: 900;
+}
+
+input[type="submit"]:hover {
+    background: #fff;
+    color: #00bc9c;
+}
+
+input[type="email"]::placeholder {
+    color: #828e99;
+}
+
+/*-------- End contact-section ---------*/
+
+/*-------- Start footer-section  ---------*/
+.footer-section {
+    background: #283645;
+    color: #697785;
+    padding: 40px 0;
+    position: relative;
+}
+
+.footer-content {
+    float: left;
+}
+
+.footer-content p {}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu li {
+    float: left;
+    padding-right: 30px;
+}
+
+.footer-menu li:first-child {
+    list-style-type: none;
+}
+
+.footer-menu li a {
+    color: #697785;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.footer-menu li a:hover {
+    color: #00bc9c;
+}
+
+.btn-top a {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    background: #4e5c6c;
+    color: #949ba2;
+    padding: 5px 10px;
+    transform: translate(-50%, -50%);
+}
+
+.btn-top a:hover {
+    background: #00bc9c;
+    color: #fff;
+}
+
+/*-------- End footer-section  ---------*/
+
+.mega-menu-section {}
+
+.mega-menu-content {}
+
+.mega-menu-content h3 {
+    padding: 20px 0;
+    font-size: 25px;
+    color: #506a85;
+}
+
+.mega-menu-content p {
+    padding: 0 0 30px;
+}
+
+.mega-menu-link {}
+
+.mega-menu-link li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.mega-menu-link li {}
+
+.mega-menu-link li a {
+    padding-left: 35px;
+    color: #8297af;
+    font-size: 17px;
+}
+
+.mega-menu-link li a:hover {
+    color: #00bc9c;
+}
+
+.mega-menu-link li a i {}
