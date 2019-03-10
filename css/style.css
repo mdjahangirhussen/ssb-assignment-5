@@ -269,6 +269,7 @@ i.fas.fa-search {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    background-attachment: fixed;
 }
 
 .banner-content {
@@ -379,7 +380,9 @@ i.fas.fa-search {
 .test-work-ditalis img {}
 
 .test-work-about {}
-
+.test-work-ditalis:hover .test-work-about h4 {
+    color: #00bc9c;
+}
 .test-work-effect {
     position: relative;
     overflow: hidden;
